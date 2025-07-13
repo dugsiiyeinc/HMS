@@ -259,6 +259,7 @@ h1{
     }
      .menu-links[ data-visible="false"]{
         transform: translateX(100%);
+
     }
     .humberger i[ data-visible="false"]{
         display: none;
@@ -270,6 +271,7 @@ h1{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
     }
     .menu-links{
         display: flex;
