@@ -9,30 +9,30 @@
   box-sizing: border-box;
   margin-inline: auto;
  
-  
+
 }
 body {
  font-family: "Roboto", sans-serif;
+ 
 }
-
-.service-item {
+.fade-up {
   opacity: 0;
   transform: translateY(40px);
-  transition: all 0.6s ease-out;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-.service-item.reveal {
+.fade-up.visible {
   opacity: 1;
   transform: translateY(0);
 }
- 
- 
-.head{
+
+.head {
 margin-top: 100px;
 text-align: center;
 }
+
 h2.section-title {
-   font-family: "poppins", sans-serif;
+  font-family: "poppins", sans-serif;
   position: relative;
   display: inline-block;
   font-size: 2rem;
@@ -68,22 +68,31 @@ h2.section-title::before,
 
     .subtitle {
       color: #333;
-      font-size: 0.75rem;
+      font-size: 1rem;
       max-width: 600px;
       margin: 0 auto;
     }
 
    .service-blogs{
-    width: 100%;
+     width: 100%;
     display: grid;
-      justify-content: center;
-      align-items: center;
-     padding: 2rem 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
     grid-template-columns:repeat(3 , 1fr);
     gap: 2rem;
    }
     
+   .service-item {
+     opacity: 0;
+     transform: translateY(30px);
+     transition: all 0.3s ease-out;
+}
 
+.service-item.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
     .service-item{
       margin-top: 60px;
        display: flex;
@@ -95,7 +104,8 @@ h2.section-title::before,
       width: 422px;
       height: 359px;
       padding: 1.5rem;
-      border: 0.5px solid rgb(182, 180, 180);
+      border:1px solid
+ color-mix(in srgb, #444444, transparent 85%);
       border-radius: 8px;
 
     }
@@ -135,7 +145,7 @@ h2.section-title::before,
       background-color: #1977cc;
       border-radius: 8px;
      top: 6px;
- left: 6px;
+    left: 6px;
   z-index: 0;
     }
 
@@ -158,16 +168,24 @@ h2.section-title::before,
       justify-content: center;
       align-items: center;
      }
- .service-item:hover {
-  background-color:#1977cc; /* Blue background */
-  color: #fff;               /* White text */
-  cursor: pointer;
+     .info p{
+     
+      text-align: center;
+     }
+     .service-item:hover {
+       background-color:#1977cc;
+        color: #fff;               
+        cursor: pointer;
 }
 
-.service-item:hover h3,
-.service-item:hover p {
-  color: #fff;
-  transition: all 0.3s ease;
+    .service-item:hover h3,
+    .service-item:hover p {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      transition: all 0.3s ease;
 }
 
 .service-item:hover .icon-box::before {
@@ -176,10 +194,10 @@ h2.section-title::before,
 }
 .service-item:hover .icon-box::after {
   transition: all 0.3s ease;
-  background-color: #fff; /* Make the icon box white */
+  background-color: #fff;
 }
 
 .service-item:hover .icon-box i {
   transition: all 0.3s ease;
-  color: #1977cc; /* Change icon color to blue */
+  color: #1977cc;
 }
