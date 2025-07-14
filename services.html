@@ -10,7 +10,7 @@
 <body>
 
 
- <section class="services container fade-up">
+ <section  class="services container fade-up">
   <div class="head">
   <h2 class="section-title">Services</h2>
   <p class="subtitle">
@@ -94,20 +94,20 @@
 
 
 
+
+
 <script>
   const servicesSection = document.querySelector('.services');
   const items = document.querySelectorAll('.service-item');
 
-  function isInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-      rect.top < window.innerHeight && rect.bottom > 0
-    );
-  }
-
   function revealOnScroll() {
-    if (isInViewport(servicesSection)) {
+    const triggerBottom = window.innerHeight * 0.70;
+
+    // Reveal whole section
+    if (servicesSection.getBoundingClientRect().top < triggerBottom) {
       servicesSection.classList.add('visible');
+
+      // Optional: Reveal items one by one
       items.forEach((item, index) => {
         setTimeout(() => {
           item.classList.add('reveal');
@@ -121,7 +121,6 @@
 
   window.addEventListener('scroll', revealOnScroll);
   window.addEventListener('load', revealOnScroll);
-  window.addEventListener('resize', revealOnScroll);
 </script>
 
 
