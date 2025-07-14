@@ -64,6 +64,14 @@ h2.section-title::before,
       margin: 0 auto;
     }
 
+    .dep-data
+    {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
      .navbar{
       padding-top: 60px;
      }
@@ -85,3 +93,6 @@ h2.section-title::before,
       color: #1977cc;
       cursor: pointer;
     }
+
+
+    
