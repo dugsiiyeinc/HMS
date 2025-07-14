@@ -201,3 +201,27 @@ h2.section-title::before,
   transition: all 0.3s ease;
   color: #1977cc;
 }
+
+
+
+
+
+@media screen and (max-width: 768px){
+.head{
+   margin-top: auto;
+}
+.head .section-title{
+  font-size: 1rem;
+}
+head .sub-title{
+  font-size: 0.75rem;
+}
+
+.service-blogs{
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 0;
+}
+
+
+}

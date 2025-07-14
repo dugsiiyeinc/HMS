@@ -94,20 +94,20 @@
 
 
 
-
-
 <script>
   const servicesSection = document.querySelector('.services');
   const items = document.querySelectorAll('.service-item');
 
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top < window.innerHeight && rect.bottom > 0
+    );
+  }
+
   function revealOnScroll() {
-    const triggerBottom = window.innerHeight * 0.70;
-
-    // Reveal whole section
-    if (servicesSection.getBoundingClientRect().top < triggerBottom) {
+    if (isInViewport(servicesSection)) {
       servicesSection.classList.add('visible');
-
-      // Optional: Reveal items one by one
       items.forEach((item, index) => {
         setTimeout(() => {
           item.classList.add('reveal');
@@ -121,6 +121,7 @@
 
   window.addEventListener('scroll', revealOnScroll);
   window.addEventListener('load', revealOnScroll);
+  window.addEventListener('resize', revealOnScroll);
 </script>
 
 
