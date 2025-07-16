@@ -44,7 +44,18 @@ img{
     top:42%;
     left: 40%;
     color: #1977cc;
+  
 }
+.about-grid .doctor-video a:hover{
+       animation-name: wave;
+     animation-duration: 1s;
+}
+
+@keyframes wave{
+    50%{transform: scale(0.5,0.5)};
+    100%{ opacity: 1};
+}
+
 .about-grid .doctor-video a, i{
     font-size: 5rem;
 }
@@ -154,7 +165,68 @@ img{
     color: #444;
     font-weight: 400;
 }
+@media (min-width:1025px) and (max-width:1200px){
+     .about{
+        width: 100%;
+    }
+    .about-grid{
+        width: 100%;
+        grid-template-columns: 1fr,1fr;
+        padding: 1rem;
+    }
+   
+    .stats{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+    }
+    .stats-grid{
+        width: 100%;
+        grid-template-columns: repeat(4,1fr);
+        
+    }
+    .stats .stats-grid .box{
+        width: 100%;
+    }
+    .stats .stats-grid .box .user{
+   display: flex;
+   gap: 2rem;
 
+}
+}
+/* big laptop */
+@media (min-width:769px) and (max-width:1024px){
+     .about{
+        width: 100%;
+    }
+    .about-grid{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+   
+    .stats{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+    }
+    .stats-grid{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .stats .stats-grid .box{
+        width: 100%;
+    }
+    .stats .stats-grid .box .user{
+   display: flex;
+   gap: 2rem;
+
+}
+}
+/* Phone */
  @media(max-width:768px){
     .about{
         width: 100%;
