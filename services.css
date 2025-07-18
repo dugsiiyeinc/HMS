@@ -9,7 +9,7 @@
 }
 
 .container{
-  width:min(90%,1200px);
+  max-width:1150px;
   box-sizing: border-box;
   margin-inline: auto;
  
