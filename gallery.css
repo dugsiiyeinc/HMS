@@ -83,14 +83,19 @@ h2.section-title::before,
      width:309px;
      height: 231px;
      margin-left: 0;
-     transition: all 0.3 ease-in-out;
+     /* transition: all 0.3 ease-in-out; */
     }
 
     
 .photos img:hover {
-  transform: scale(1.002);
+animation-name: wiggle;
+animation-duration: 0.2s;
 }
 
+@keyframes wiggle{
+    50%{transform: scale(1.1,1.1)};
+    100%{ opacity: 1};
+}
 @media screen and (max-width: 768px){
   .photos{
     grid-template-columns: 1fr;
