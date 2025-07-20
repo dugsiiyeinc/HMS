@@ -14,7 +14,7 @@ img{
 }
 .container{
     width: 1150px;
-    margin:0 auto;
+    margin-inline: auto;
 
 }
 .testemonial{
@@ -61,7 +61,7 @@ img{
 }
 .testo-opinion .opinion-header{
     display: flex;
-    gap:2.5rem;
+    gap:2.4rem;
 }
 .testo-opinion .opinion-header img{
     width:78px;
