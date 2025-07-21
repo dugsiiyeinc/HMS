@@ -216,6 +216,9 @@ h2.section-title::before,
 
 
 @media screen and (max-width: 768px){
+  .services{
+    width: 100%;
+  }
 .head{
    margin-top: auto;
 }
