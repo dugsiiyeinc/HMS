@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+      font-family: "Roboto", sans-serif;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 1150px;
+    margin-inline: auto;
+
+}
+.testemonial{
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 2rem;
+}
+.teste-grid{
+    width: 100%;
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+
+}
+.testo-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: flex-satrt;
+    gap:1rem;
+    padding:5rem 3rem;
+}
+.testo-text h3{
+    font-size: 2rem;
+    line-height: 2.3rem;
+    font-weight: 700;
+    color: #2c4964;
+    font-family: sans-serif;
+}
+.testo-text p{
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    color:444;
+
+}
+.testo-opinion{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    margin-inline:1rem;
+    padding: 3rem 1rem;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0,0.1);
+}
+.testo-opinion .opinion-header{
+    display: flex;
+    gap:2.4rem;
+}
+.testo-opinion .opinion-header img{
+    width:78px;
+    height: 78px;
+    border-radius: 50%;
+
+}
+.testo-opinion .opinion-header h3{
+     font-size: 1.1rem;
+    line-height: 1.3rem;
+    font-weight: 700;
+    color: #2c4964;
+    font-family: sans-serif;
+}
+.testo-opinion .opinion-header span{
+    color:#44444480;
+    font-size: 0.9rem;
+    line-height: 1.05rem;
+    font-weight: 500;
+
+}
+.testo-opinion .opinion-header .stars{
+    color:#ffc107 !important; 
+    display: flex;
+}
+.testo-opinion .opinion-header p ,span{
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    color:444;
+    font-style: italic;
+
+}
+.testo-opinion .opinion-header p, .color{
+    color:#a3c9eb !important;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.swiper-bullet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    font-size: 0.7rem;
+
+}
+.swiper-bullet i{
+    background-color: rgb(68, 68, 68,0.1);
+    border-radius: 50%;
+}
+.swiper-bullet i:hover{
+    background-color:#1977cc;
+    border-radius: 50%;
+}
+
+
+@media(max-width:768px){
+    .testemonial{
+        margin-top: 1rem;
+    }
+    .teste-grid{
+        grid-template-columns: 1fr;
+        margin:0.5rem;
+         padding-top: 1rem;
+    }
+    .testo-text{
+      padding-inline:1rem;
+    }
+   
+
+}
