@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+      font-family: "Roboto", sans-serif;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 1150px;
+    margin:0 auto;
+
+}
+.about{
+    margin-top: 1rem;
+    width: 100%;
+    height: 90%;
+}
+.about-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+
+}
+.about-grid .doctor-video{
+   background:url('https://themewagon.github.io/MediLab/assets/img/about.jpg');
+   background-size: cover;
+   background-position: center;
+   background-position: no-repeat;
+   width: 100%;
+   height: 360px;
+   position: relative;
+   /* margin: 2rem; */
+}
+.about-grid .doctor-video a{
+    position: absolute;
+    top:42%;
+    left: 40%;
+    color: #1977cc;
+  
+}
+.about-grid .doctor-video a:hover{
+       animation-name: wave;
+     animation-duration: 1s;
+}
+
+@keyframes wave{
+    50%{transform: scale(0.5,0.5)};
+    100%{ opacity: 1};
+}
+
+.about-grid .doctor-video a, i{
+    font-size: 5rem;
+}
+.about-grid .about-text{
+   display: flex;
+   flex-direction: column;
+   gap:2rem;
+    width: 100%;
+  
+}
+
+.about-grid .about-text .texts{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.about-grid .about-text .texts h2{
+    font-size: 2rem;
+    line-height: 2.3rem;
+    color: #2c4964;
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+}
+.about-grid .about-text .texts p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #444;
+    font-weight: 400;
+}
+
+.about-grid .about-text .texts .icon {
+    display: flex;
+    gap:1.5rem
+}
+.fa-vial-circle-check , .fa-pump-medical,.fa-heart-circle-xmark{
+    color: #1977cc;
+    font-size: 3rem;
+}
+.about-grid .about-text .texts .icon .icon1-text{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.about-grid .about-text .texts .icon .icon1-text h3{
+  
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #2c4964;
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+    font-weight: bolder;
+}
+ /* statistics saction */
+.stats{
+ margin-block: 3rem;
+ background-color: #f1f7fc;
+ width: 100%;
+ padding: 40px;
+
+}
+.stats-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    justify-content: center;
+ 
+}
+.stats .stats-grid .box{
+    background-color: #ffffff;
+    padding: 1rem;
+    position: relative;
+}
+.stats .stats-grid .box .user{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* position: relative; */
+      padding: 1rem;
+      gap:1rem;
+}
+.stats .stats-grid .box .user i{
+    font-size: 1.5rem;
+    position: absolute;
+     top: -20%;
+    left: 40%;
+    background-color: #1977cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+.stats .stats-grid .box .user h3{
+  font-size: 2rem;
+    line-height: 2.3rem;
+    color: #2c4964;
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+}
+.stats .stats-grid .box .user span{
+       font-size: 1rem;
+    line-height: 1.5rem;
+    color: #444;
+    font-weight: 400;
+}
+@media (min-width:1025px) and (max-width:1200px){
+     .about{
+        width: 100%;
+    }
+    .about-grid{
+        width: 100%;
+        grid-template-columns: 1fr,1fr;
+        padding: 1rem;
+    }
+   
+    .stats{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+    }
+    .stats-grid{
+        width: 100%;
+        grid-template-columns: repeat(4,1fr);
+        
+    }
+    .stats .stats-grid .box{
+        width: 100%;
+    }
+    .stats .stats-grid .box .user{
+   display: flex;
+   gap: 2rem;
+
+}
+}
+/* big laptop */
+@media (min-width:769px) and (max-width:1024px){
+     .about{
+        width: 100%;
+    }
+    .about-grid{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+   
+    .stats{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+    }
+    .stats-grid{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .stats .stats-grid .box{
+        width: 100%;
+    }
+    .stats .stats-grid .box .user{
+   display: flex;
+   gap: 2rem;
+
+}
+}
+/* Phone */
+ @media(max-width:768px){
+    .about{
+        width: 100%;
+    }
+    .about-grid{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+   
+    
+     .stats .stats-grid{
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap:2rem;
+        margin-block:4rem;
+     }
+ 
+.stats .stats-grid .box .user{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+
+}
+
+    }
