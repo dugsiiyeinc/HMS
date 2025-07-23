@@ -404,7 +404,6 @@ h1{
     }
     .hero .hero-saction .hero-box #box1{
   grid-template-columns: 1fr;
-  width: 100;
 }
  
     .hero .hero-saction .hero-box .boxes {
