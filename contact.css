@@ -111,7 +111,7 @@ h2.section-title::before,
 .contact-info{
   display: flex;
   flex-direction: column;
-  gap: 5rem ;
+  gap: 1.5rem ;
 }
 
 .info-box {
