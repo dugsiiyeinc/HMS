@@ -4,9 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctors</title>
-    <link rel="stylesheet" href="doctors.css">
+    <link rel="stylesheet" href="../css/doctors.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/home.css">
+<link rel="stylesheet" href="../css/testemonial.css">
+<link rel="stylesheet" href="../css/gallery.css">
+
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+  <!-- HEADER  -->
+    <header>
+        <!-- CONTACT PART -->
+        <nav class="nav-contact  ">
+            <!-- CONTACT NUMBERS -->
+         <div class="contact container">
+        <div class="contact-numbers">
+            <span><i class="fa-regular fa-envelope"></i>Contact@gmail.com</span>
+            <span> <i class="fa-regular fa-user"></i>+1225533647</span>
+        </div>
+     <!-- SOCIAL MEDIA  LINKS -->
+        <div class="contact-links">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        </div>
+        </nav>
+
+         <!-- HEADER NAVIGATIONS  -->
+          <nav class=" flex-nav container">
+               
+               <div class="logo">
+            <H1>MEDLAP</H1>
+          </div> 
+              <!-- HUMBERGER  -->
+            <div class="humberger">
+               <i class="fa-solid fa-bars" data-visible="true"></i>
+               <i class="fa-solid fa-xmark"  data-visible="false"></i>
+        </div>
+
+           <!-- MENU-LINKS -->
+          
+          <ul class="menu-links " data-visible="true">
+             <li>
+                <a href="/" class="active">Home</a>
+            </li>
+             <li>
+                <a href="/pages/about.html">About</a>
+            </li>
+            <li>
+
+                <a href="/pages/services.html">Service</a>
+            </li>
+            <li>
+                <a href="/pages/departments.html">Departments</a>
+
+            </li>
+           
+            <li>
+                <a href="/pages/doctors.html">Doctors</a>
+            </li>
+    
+            <li class="dropdown">
+              <a href="#">Dropdown <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                   <li><a href="#t">Dropdown1</a></li>
+                   <li><a href="#">Dropdown2</a></li>
+                   <li><a href="#">Dropdown3</a></li>
+                   <li><a href="#">Dropdown4</a></li>
+ 
+                   </ul>
+                   </li>
+
+            <li>
+                <a href="/pages/contact.html">Contact</a>
+            </li>
+               <!-- <button>make an Appointment </button> -->
+          </ul>
+       
+    <button>make an Appointment </button>
+        </nav>
+    </header>
+ <!-- header -->
 <body>
     <section class="doctors container">
      <div class="heading-text">
@@ -15,7 +95,7 @@
     fuga eum quidem sint consectetur velit</p>
      </div>
 
-     <div class="doctor-card">
+     <div class="doctor-card ">
        
         <div class="card">
             <img src="https://themewagon.github.io/MediLab/assets/img/doctors/doctors-1.jpg" alt="doctors photo">
@@ -81,15 +161,15 @@
 
     </section>
 
-    <section class="frequently">
+    <section class="frequently ">
          <div class="heading-text">
         <h2 class="section-title">Doctors</h2>
         <p class="subtitle">Necessitatibus eius consequatur ex aliquid 
               fuga eum quidem sint consectetur velit</p>
      </div>
-     <div class="frequent-card">
+     <div class="frequent-card container">
         <div class="f-card box1">
-            <span> Non consectetur a erat nam at lectus urna duis?</span>
+            <span class="span-box"> Non consectetur a erat nam at lectus urna duis?</span>
            <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non</p>
         </div>
         <div class="f-card">
@@ -120,5 +200,164 @@
        
      </div>
     </section>
+    <!-- testomonial -->
+ <section class="testemonial container ">
+     <div class="teste-grid container">
+       <div class="testo-text">
+        <h3>Testimonials</h3>
+        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+       </div>
+
+       <div class="testo-opinion ">
+       
+        <div class="opinion-header">
+         <img src="https://themewagon.github.io/MediLab/assets/img/testimonials/testimonials-5.jpg" alt="opinon-5 imgage">
+         <div class="opinion-headder-text">
+            <h3>Jena karlis</h3>
+            <span>Designer</span>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+         </div>
+        </div>
+         <p>
+                <i class=" color fa-solid fa-quote-left"></i>
+            <span>
+               
+               Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+             
+            </span>
+               <i class=" color fa-solid fa-quote-right"></i>
+         </p>
+           <div class="swiper-bullet">
+            <i class="fa-regular fa-circle"></i>
+            <i class="fa-regular fa-circle"></i>
+            <i class="fa-regular fa-circle"></i>
+            <i class="fa-regular fa-circle"></i>
+           </div>
+       </div>
+     </div>
+    </section>
+    <!-- testomonial -->
+     <!-- gallerty -->
+   <section class="galleries ">
+  <div class="head ">
+  <h2 class="section-title">Gallery</h2>
+  <p class="subtitle">Necessitatibus eius consequatur ex aliquid 
+    fuga eum quidem sint consectetur velit</p>
+
+
+    <div class="photos">
+      <img src="https://themewagon.github.io/MediLab/assets/img/gallery/gallery-1.jpg" alt="">
+      <img src="https://themewagon.github.io/MediLab/assets/img/gallery/gallery-2.jpg" alt="">
+      <img src="https://themewagon.github.io/MediLab/assets/img/gallery/gallery-3.jpg" alt="">
+      <img src="https://themewagon.github.io/MediLab/assets/img/gallery/gallery-4.jpg" alt="">
+      <img src="https://themewagon.github.io/MediLab/assets/img/gallery/gallery-5.jpg" alt="">
+      <img src="https://themewagon.github.io/MediLab/assets/img/gallery/gallery-6.jpg" alt="">
+      <img src="https://themewagon.github.io/MediLab/assets/img/gallery/gallery-7.jpg" alt="">
+      <img src="https://themewagon.github.io/MediLab/assets/img/gallery/gallery-8.jpg" alt="">
+      
+    </div>
+    </section>
+     <!-- gallerty -->
+
+    <!-- footer -->
+       <section class="footer">
+        <div class="footer-grid container">
+          <div class="footer-medilap">
+            <h2>medilap</h2>
+             <div class="medlip-text">
+                 <p>A108 Adam Street</p>
+             <p>New York, NY 535022</p>
+             </div>
+
+            <p> <strong>Phone:</strong> +1 5589 55488 55</p>
+            <p><strong>Email:</strong>  info@example.com</p>
+           
+            <div class="contact-links-footer">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+             </div>
+          </div>
+       
+          <div class="Useful-Links footer-title">
+           <h4> Useful Links </h4>
+            <ul class="ul-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+
+          </div>
+          <div class="Our-Services footer-title">
+            <h4>Our Services</h4>
+            <ul class="ul-links">
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Product Management</a></li>
+                <li><a href="#"></a>Marketing</a></li>
+                <li><a href="#"></a>Graphic Design</a></li>
+            </ul>
+          </div>
+          <div class="Hic-solutasetp footer-title">
+            <h4>Hic solutasetp</h4>
+            <ul class="ul-links">
+              <li><a href="#">Molestiae accusamus iure</a></li>
+                <li><a href="#">Excepturi dignissimos</a></li>
+                <li><a href="#">Suscipit distinctio</a></li>
+                <li><a href="#">Dilecta</a></li>
+                <li><a href="#">Sit quas consectetur</a></li>
+            </ul>
+          </div>
+          <div class="Nobis-illum  footer-title">
+              <h4>Nobis illum</h4>
+            <ul class="ul-links">
+                <li><a href="#">Ipsam</a></li>
+                <li><a href="#">Laudantium dolorum</a></li>
+                <li><a href="#">Dinera</a></li>
+                <li><a href="#">Trodelas</a></li>
+                <li><a href="#">Flexo</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="footer-text container">
+            <p>© Copyright <span>Medilab</span> All Rights Reserved</p>
+
+      <p>Designed by <span class="blue"> BootstrapMade </span> Distributed by  <span class="blue">ThemeWagon</span></p>
+        </div>
+    </section>
+    <!-- footer -->
+
+       <script>
+    const hamburger = document.querySelector('.humberger');
+    const menulink = document.querySelector(".menu-links");
+    const icons = document.querySelectorAll("i");
+
+    hamburger.addEventListener("click", function (event) {
+        const isVisible = menulink.getAttribute('data-visible');
+        if (isVisible == "true") {
+            // qari hiding
+            menulink.setAttribute('data-visible', "false");
+            icons[0].setAttribute('data-visible', "true");
+            icons[1].setAttribute('data-visible', "false");
+        } else if (isVisible == "false") {
+            // soo bandhig showing
+            menulink.setAttribute('data-visible', "true");
+            icons[0].setAttribute('data-visible', "false");
+            icons[1].setAttribute('data-visible', "true");
+        }
+    });
+
+
+</script>
 </body>
 </html>
