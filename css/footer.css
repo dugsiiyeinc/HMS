@@ -48,13 +48,13 @@ body {
     font-weight: 400;
     color:#444;
 }
-.contact-links{
+.contact-links-footer{
     display: flex;
 }
-.contact-links a ,i{
+.contact-links-footer a ,i{
     text-decoration: none;
 }
-.contact-links i{
+.contact-links-footer i{
     margin-block: 1.5rem;
     font-size: 1.15rem;
     width: 40px;
