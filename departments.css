@@ -10,7 +10,7 @@ body {
 }
 
 .container{
-  max-width: 1110px;
+  max-width: 1150px;
   box-sizing: border-box;
   margin-inline: auto;
  
@@ -23,7 +23,7 @@ body {
 
 
 .head {
-margin-top: 100px;
+margin-top:6rem;
 text-align: center;
 }
 
@@ -74,18 +74,28 @@ h2.section-title::before,
       margin: 0 auto;
     }
 
-    .dep-data
+    /* .dep-data
     {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
       gap: 6rem;
+    } */
+    .dep-data
+    {
+      display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+  
     }
 
      .navbar{
-      padding-top: 60px;
+      display: grid;
+      grid-column: 1 /span 1;
+    
      }
+    
     .navbar .nav-lists{
       display: flex;
       flex-direction: column;
@@ -107,7 +117,9 @@ h2.section-title::before,
     
 
     .contents{
-      padding-block: 60px;
+      display: grid;
+
+      grid-column: 2 /span 2;
     }
   
    .card{
@@ -183,6 +195,7 @@ h2.section-title::before,
      .head {
       margin-top: 10px;
       text-align: center;
+      margin-block:2rem
        }
 
      .dep-data {
@@ -198,6 +211,11 @@ h2.section-title::before,
      margin-top: 6rem;
      height: 3rem;
      background-color: #007bff;
+     }
+     .contents{
+      display: flex;
+      flex-direction: column-reverse;
+       padding-block: 10px;
      }
      
      .navbar{
@@ -230,13 +248,11 @@ h2.section-title::before,
     
       }
      
-      .contents{
-         padding-block: 10px;
-      }
+    
         .image-dep{
       display: none;
       }
-      .image-dep1 { 
+      .info-blog img { 
         width: 100%;
         display: block;
         margin-top: 1rem;
