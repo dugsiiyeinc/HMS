@@ -74,7 +74,8 @@ h2.section-title::before,
       margin: 0 auto;
     }
 
-    
+
+
     .dep-data
     {
       display: grid;
@@ -188,6 +189,7 @@ h2.section-title::before,
      .head {
       margin-top: 10px;
       text-align: center;
+      margin-block: 1rem;
        }
 
      .dep-data {
@@ -200,7 +202,7 @@ h2.section-title::before,
      }
      .blue-line{
      width: 100%;
-     margin-top: 6rem;
+     margin-top: 5rem;
      height: 3rem;
      background-color: #007bff;
      }

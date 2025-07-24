@@ -112,24 +112,34 @@ h2.section-title::before,
   align-items: flex-start;
 }
 
-.contact-info {
-  flex: 1;
-  min-width: 400px;
+
+.contact-container {
+  display: grid;
+  grid-template-columns:repeat(3 ,1fr);
+ width: 100%;
+ gap: 2rem;
+}
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem ;
 }
 
 .info-box {
   display: flex;
   align-items: flex-start;
-  gap: 0.625rem;
+  gap: 1rem;
 }
 
 .info-box i {
   background-color: #0d6efd;
+ 
   color: #fff;
   font-size: 1.25rem;
   padding: 0.9375rem;
   border-radius: 50%;
   margin-right: 0.9375rem;
+
 }
 
 .info-box h4 {
@@ -145,7 +155,7 @@ h2.section-title::before,
 }
 
 .contact-form {
-  flex: 2;
+  grid-column: span 2;
   min-width: 300px;
 }
 
