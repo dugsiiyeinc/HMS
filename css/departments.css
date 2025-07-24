@@ -74,14 +74,7 @@ h2.section-title::before,
       margin: 0 auto;
     }
 
-    /* .dep-data
-    {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 6rem;
-    } */
+    
     .dep-data
     {
       display: grid;
