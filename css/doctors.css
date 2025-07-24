@@ -17,12 +17,14 @@ body {
     display: flex;
     flex-direction: column;
     margin-block: 2rem;
+    
 }
  .heading-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
 }
 .heading-text h2{
     font-size: 2rem;
@@ -64,8 +66,10 @@ h2.section-title::before,
 }
 .doctors .doctor-card{
     display: grid;
+
     grid-template-columns: repeat(2,1fr);
-    gap:2rem
+    gap:2rem;
+    margin-top: 2rem;
 }
 .doctors .doctor-card .card{
     display: grid;
@@ -187,6 +191,27 @@ h2.section-title::before,
 }
 
 
+/* scroll */
+
+.scoll-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  position: absolute;
+  bottom: 0.5%;
+  right: 0;
+  width:35px;
+  height: 35px;
+  border-radius: 4px;
+ cursor:pointer;
+ position: fixed;
+}
+.scoll-btn .fa-arrow-up{
+  font-size: 1rem;
+  color:white;
+  
+}
 
 /* phones */
 @media(max-width:768px){
