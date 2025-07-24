@@ -1,21 +1,21 @@
-Hospital Management System (HMS) Website
+## Hospital Management System (HMS) Website
 
 Welcome to the Hospital Management System (HMS) Website.
 
-Overview
+## Overview
 
 This Hospital Management System (HMS) is a modern, responsive, and user-focused website template designed for hospitals, clinics, and healthcare centers. This project demonstrates best practices in web design, accessibility, and usability, providing a seamless experience for both patients and healthcare professionals.
 
-Table of Contents
+## Table of Contents
 
--Project Structure
--Source Code Explanation
--Features
--Customization
--Getting Started
--Authors
+- Project Structure
+- Source Code Explanation
+- Features
+- Customization
+- Getting Started
+- Authors
 
-Project Structure
+## Project Structure
 
 index.html: Homepage with navigation, hero section, and quick access to all major areas.
 about.html: Information about the hospital, its mission, and key statistics.
@@ -30,7 +30,7 @@ contact.html: Contact page with a map, contact information, and a message form.
 
 Each HTML file is paired with a dedicated CSS file for modular and maintainable styling. The main CSS files are style.css, about.css, services.css, departments.css, doctors.css, appointment.css, gallery.css, testemonial.css, footer.css, and contact.css.
 
-Source Code Explanation
+## Source Code Explanation
 
 The source code is organized for clarity and maintainability, with each section of the website separated into its own HTML and CSS files. Here is how the main files work together:
 
@@ -56,19 +56,19 @@ contact.html and contact.css create the contact page, which includes a map, deta
 
 All CSS files use Google Fonts and Font Awesome for a modern look and consistent iconography. The code is written in plain HTML and CSS, making it easy to understand, extend, and customize for any hospital or healthcare provider.
 
-Features
+## Features
 
 The website is fully responsive and optimized for desktops, tablets, and mobile devices. It features a modern user interface with a clean layout, professional typography, and smooth animations. Navigation is intuitive, with a clear menu structure for easy access to all sections. Patients can book appointments online through a streamlined form. The site introduces the medical team with detailed doctor profiles and highlights the hospital’s environment and facilities through a photo gallery. Patient testimonials help build trust. The site is accessible and easy to customize, allowing updates to content, colors, and branding.
 
-Customization
+## Customization
 
 All content and images are easily editable in the HTML files. Colors, fonts, and layouts can be customized in the CSS files. The project uses Google Fonts and Font Awesome for enhanced typography and icons.
 
-Getting Started
+## Getting Started
 
 To get started, clone or download this repository from GitHub. Open index.html in your preferred web browser to explore the homepage. You can edit the HTML and CSS files to tailor the website to your institution’s needs.
 
-Authors
+## Authors
 
 This project was developed by Abdirizak and Amina.
 
