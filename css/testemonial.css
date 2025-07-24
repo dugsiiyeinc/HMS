@@ -14,7 +14,8 @@ img{
 }
 .container{
     width: 1150px;
-    margin-inline: auto;
+    margin: 0 auto;
+
 
 }
 .testemonial{
@@ -23,7 +24,6 @@ img{
     margin-top: 2rem;
 }
 .teste-grid{
-    width: 100%;
     padding-top: 4rem;
     display: grid;
     grid-template-columns: repeat(2,1fr) ;

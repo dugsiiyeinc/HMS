@@ -175,7 +175,7 @@ h2.section-title::before,
     justify-content:flex-start ;
     align-items: flex-start;
 }
-.frequent-card .box1 span{
+.frequently .frequent-card .box1 span{
       font-size: 1.2rem;
    font-weight: 500;
    line-height: 1.4rem;

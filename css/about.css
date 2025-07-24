@@ -56,7 +56,7 @@ img{
     100%{ opacity: 1};
 }
 
-.about-grid .doctor-video a, i{
+.about .about-grid .doctor-video .fa-circle-play{
     font-size: 5rem;
 }
 .about-grid .about-text{
