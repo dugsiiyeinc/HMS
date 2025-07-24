@@ -165,28 +165,6 @@ img{
     color: #444;
     font-weight: 400;
 }
-
-/* scroll */
-
-.scoll-btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #007bff;
-  position: absolute;
-  bottom: 0.5%;
-  right: 0;
-  width:35px;
-  height: 35px;
-  border-radius: 4px;
- cursor:pointer;
- position: fixed;
-}
-.scoll-btn .fa-arrow-up{
-  font-size: 1rem;
-  color:white;
-  
-}
 @media (min-width:1025px) and (max-width:1200px){
      .about{
         width: 100%;
