@@ -214,6 +214,7 @@ h2.section-title::before,
      .contents{
       display: flex;
       flex-direction: column-reverse;
+       padding-block: 10px;
      }
      
      .navbar{
@@ -246,10 +247,7 @@ h2.section-title::before,
     
       }
      
-      .contents{
-         padding-block: 10px;
-   
-      }
+    
         .image-dep{
       display: none;
       }
