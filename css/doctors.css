@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body {
+ font-family: "Roboto", sans-serif;
+ background-color: #ffffff;
+}
+.container{
+  max-width: 1150px;
+  box-sizing: border-box;
+  margin-inline: auto;
+}
+.doctors{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-block: 2rem;
+}
+ .heading-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading-text h2{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    color: #2c4964;
+    font-family: Poppins, sans-serif;
+    position: relative;
+    padding-bottom: 1rem;
+}
+h2.section-title::before,
+ h2.section-title::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   height: 3px;
+   background-color: #ccc;
+   width: 140px;
+    }
+
+    h2.section-title::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    h2.section-title::after {
+      width: 80px;
+      background-color: #007bff;
+      height: 3px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+.doctors .heading-text p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.35rem;
+    color: #444;
+}
+.doctors .doctor-card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:2rem
+}
+.doctors .doctor-card .card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1rem;
+    border: 1px solid rgba(0, 0, 0,0.1);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0,0.1) ;
+    padding: 1rem;
+
+}
+.doctors .doctor-card .card img{
+    grid-column: 1 /span 1;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.doctors .doctor-card .card .card-text{
+    grid-column: 2/span 2;
+}
+.doctors .doctor-card .card .card-text h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: #2c4964;
+    font-family: Poppins, sans-serif;
+}
+
+.doctors .doctor-card .card .card-text span:nth-child(1){
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.35rem;
+    color: #444;
+     font-family: "Roboto", sans-serif;
+     text-transform: capitalize;
+    
+}
+.doctors .doctor-card .card .card-text .underline{
+    display: block;
+     border-bottom: 2px solid #a9a7a7;
+     padding: 0.5rem;
+     width: 15%;
+}
+.doctors .doctor-card .card .card-text p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #444;
+     font-family: "Roboto", sans-serif;
+}
+
+.doctors .doctor-card .card .card-text .card-links{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+.doctors .doctor-card .card .card-text .card-links a{
+    color: #444;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    background-color: rgba(68, 68, 68,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+}
+.doctors .doctor-card .card .card-text .card-links a:hover{
+    background-color: #1977cc;
+    color:white;
+}
+
+/* frequently design */
+.frequently{
+    width: 100%;
+    background-color: #f1f7fc;
+    padding-block: 2rem;
+}
+.frequent-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.frequent-card .f-card{
+   background-color: #FFFFFF; 
+   color:#2c4964 ;
+   border-radius: 8px;
+   border:1px solid rgba(68, 68, 68,0.1);
+   width: 70%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0.5rem;
+   margin-top:1rem;
+
+  
+}
+.frequent-card .box1{
+    background-color: #1977cc;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start ;
+    align-items: flex-start;
+}
+.frequently .frequent-card .box1 span{
+      font-size: 1.2rem;
+   font-weight: 500;
+   line-height: 1.4rem;
+}
+.frequent-card .f-card p{
+     font-size: 1rem;
+   font-weight: 500;
+
+}
+
+
+
+/* phones */
+@media(max-width:768px){
+    .doctors{
+       
+        width:calc(100% - 20px) ;
+    }
+
+    .doctors .doctor-card{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:2rem
+}
+ .doctors .doctor-card .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .doctors .doctor-card .card .card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+    
+}
+/*Tablet */
+@media(min-width:769px) and (max-width:1024px){
+    .doctors{
+       
+        width:calc(100% - 20px) ;
+    }
+
+    .doctors .doctor-card{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:1rem
+}
+
+  .doctors .doctor-card .card{
+     display: grid;
+    grid-template-columns: repeat(3,1fr);
+     justify-content: flex-start;
+    margin-inline: 2rem;
+   
+   
+ }
+ .doctors .doctor-card .card .card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+ }
+    
+}
+
+/* frequently phone */
+
+@media(max-width:768px){
+    .frequent-card{
+        width: 100%;
+    }
+    .frequent-card .f-card{
+        width:90%;
+    }
+}
+
+
+
+
+
+
+
