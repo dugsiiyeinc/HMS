@@ -158,8 +158,10 @@ h2.section-title::before,
 }
 
 .contact-form {
-  grid-column: 2/span 2;
-  min-width: 300px;
+display: grid;
+grid-column: 2/span 2;
+  width: 100%;
+  margin-inline:1rem;
 }
 
 .contact-form .form-row {
@@ -278,11 +280,12 @@ h2.section-title::before,
   .contact-section {
     padding: 1.25rem 0;
   }
-  .contact-container {
-    flex-direction: column;
-    padding: 0 5vw;
-    gap: 1.5rem;
-  }
+  .contact-form {
+  grid-column: 1/span 1;
+  width: 95%;
+  margin-inline:1rem;
+}
+
   .contact-form .form-row {
     flex-direction: column;
     gap: 0.5rem;
@@ -293,7 +296,7 @@ h2.section-title::before,
     font-size: 0.875rem;
   }
   .contact-form button {
-    width: 100%;
+    width: 50%;
     padding: 0.75rem 0;
     font-size: 0.9375rem;
   }
@@ -328,7 +331,7 @@ h2.section-title::before,
     padding: 0.625rem 0;
   }
 
-  .contact-container {
+  .contact-container{
   display: grid;
   grid-template-columns:repeat(1 ,1fr);
  width: 100%;
