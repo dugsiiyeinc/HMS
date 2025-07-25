@@ -6,13 +6,11 @@
   <title>Document</title>
   <link rel="stylesheet" href="../css/departments.css">
    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/home.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-
-    <!-- header -->
-  <!-- HEADER  -->
+<!-- HEADER  -->
     <header>
         <!-- CONTACT PART -->
         <nav class="nav-contact  ">
@@ -83,10 +81,11 @@
                <!-- <button>make an Appointment </button> -->
           </ul>
        
-     <button >make an Appointment </button>
+    <button>make an Appointment </button>
         </nav>
     </header>
- <!-- header -->
+<!-- header -->
+
    <section class="departments container">
   <div class="head ">
   <h2 class="section-title">departments</h2>
@@ -126,6 +125,7 @@
    </div>
 
    </section>
+   <!-- end of departments -->
    <section class="footer">
         <div class="footer-grid container">
           <div class="footer-medilap">
@@ -202,7 +202,28 @@
     </section>
 </div>
 
+  <script>
+    const hamburger = document.querySelector('.humberger');
+    const menulink = document.querySelector(".menu-links");
+    const icons = document.querySelectorAll("i");
 
+    hamburger.addEventListener("click", function (event) {
+        const isVisible = menulink.getAttribute('data-visible');
+        if (isVisible == "true") {
+            // qari hiding
+            menulink.setAttribute('data-visible', "false");
+            icons[0].setAttribute('data-visible', "true");
+            icons[1].setAttribute('data-visible', "false");
+        } else if (isVisible == "false") {
+            // soo bandhig showing
+            menulink.setAttribute('data-visible', "true");
+            icons[0].setAttribute('data-visible', "false");
+            icons[1].setAttribute('data-visible', "true");
+        }
+    });
+
+
+</script>
   
 </body>
 </html>

@@ -118,17 +118,20 @@ h2.section-title::before,
   grid-template-columns:repeat(3 ,1fr);
  width: 100%;
  gap: 2rem;
+
 }
 .contact-info{
   display: flex;
   flex-direction: column;
   gap: 1rem ;
+
 }
 
 .info-box {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
+   
 }
 
 .info-box i {
@@ -325,4 +328,13 @@ h2.section-title::before,
     font-size: 0.875rem;
     padding: 0.625rem 0;
   }
+
+  .contact-container {
+  display: grid;
+  grid-template-columns:repeat(1 ,1fr);
+ width: 100%;
+ gap: 2rem;
 }
+
+}
+
