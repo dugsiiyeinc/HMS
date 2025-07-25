@@ -312,6 +312,11 @@ h1{
         display: block;
          background-color: #ffffff;
     }
+    .nav-contact .contact{
+    justify-content: space-between;
+    padding: 0.25rem;
+
+}
 .contact .contact-links {
     display: none;
 }
@@ -414,3 +419,5 @@ h1{
     flex-direction: column;
 }
 }
+
+
